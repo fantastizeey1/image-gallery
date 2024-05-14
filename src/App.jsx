@@ -30,7 +30,7 @@ function App() {
   }, [term]);
 
   return (
-    <div className="container  mx-auto">
+    <div className="container   mx-auto">
       {/* Correct usage of Imagesearch component */}
       <Imagesearch searchText={setTerm} />
 
@@ -43,7 +43,7 @@ function App() {
           <span className="loader mt-16"></span>
         </h1>
       ) : (
-        <div className="card-grid p-4 grid grid-cols-3 gap-4 ">
+        <div className="card-grid  ">
           {images.map((image) => (
             <Imagecard key={image.id} image={image} />
           ))}
