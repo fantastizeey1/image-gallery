@@ -30,7 +30,7 @@ function App() {
   }, [term]);
 
   return (
-    <div className="container mx-auto">
+    <div className="container  mx-auto">
       {/* Correct usage of Imagesearch component */}
       <Imagesearch searchText={setTerm} />
 
@@ -38,7 +38,10 @@ function App() {
         <h1 className="text-6xl text-center mx-auto mt-32">No Images Found</h1>
       )}
       {isLoading ? (
-        <h1 className="text-6xl text-center mx-auto mt-32">Loading ...</h1>
+        <h1 className="text-6xl text-center mx-auto mt-32">
+          Loading ... <br />
+          <span class="loader mt-16"></span>
+        </h1>
       ) : (
         <div className="card-grid p-4 grid grid-cols-3 gap-4 ">
           {images.map((image) => (
