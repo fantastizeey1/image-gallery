@@ -40,7 +40,7 @@ function App() {
       {isLoading ? (
         <h1 className="text-6xl text-center mx-auto mt-32">
           Loading ... <br />
-          <span class="loader mt-16"></span>
+          <span className="loader mt-16"></span>
         </h1>
       ) : (
         <div className="card-grid p-4 grid grid-cols-3 gap-4 ">
