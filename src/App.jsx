@@ -40,7 +40,7 @@ function App() {
       {isLoading ? (
         <h1 className="text-6xl text-center mx-auto mt-32">Loading ...</h1>
       ) : (
-        <div className="grid grid-cols-3 gap-4">
+        <div className="card-grid p-4 grid grid-cols-3 gap-4 ">
           {images.map((image) => (
             <Imagecard key={image.id} image={image} />
           ))}
